@@ -3,28 +3,13 @@
 # !!!   DO NOT MODIFY THIS FILE BY YOURSELF   !!!
 # -----------------------------------------------
 
-input AuthInput {
-  email: String
-  password: String!
-  username: String
-}
-
 """
 The javascript `Date` as string. Type represents date and time as the ISO Date string.
 """
 scalar DateTime
 
-type FieldError {
-  message: String!
-  path: String!
-}
-
 type Mutation {
   createPlace(place: PlaceInput!): Place!
-  deletePlace(id: String!): String!
-  login(input: AuthInput!): UserResponse!
-  register(input: AuthInput!): UserResponse!
-  updatePlace(place: PlaceInput!): Place!
 }
 
 """Destination or place of interest"""
@@ -38,33 +23,18 @@ type Place {
   """Place Image URL"""
   imageUrl: String
   title: String!
-  user: User
 }
 
 input PlaceInput {
   description: String
-  id: String
+  id: Float
   imageUrl: String
   title: String!
 }
 
 type Query {
-  currentUser: User!
   place(id: Float!): Place
 
   """Get all places from around world"""
   places: [Place!]!
-}
-
-type User {
-  email: String!
-  id: String!
-  places: [Place!]!
-  username: String!
-}
-
-type UserResponse {
-  errors: [FieldError!]
-  token: String
-  user: User
 }
