@@ -1,40 +1,40 @@
 {
-   "name": "travel-api",
-   "version": "0.0.1",
-   "description": "Awesome project developed with TypeORM.",
-   "devDependencies": {
-      "@graphql-codegen/cli": "^1.20.1",
-      "@graphql-codegen/typescript": "^1.21.0",
-      "@graphql-codegen/typescript-operations": "^1.17.14",
-      "@graphql-codegen/typescript-react-apollo": "^2.2.1",
-      "@types/bcrypt": "^3.0.0",
-      "@types/jsonwebtoken": "^8.5.0",
-      "@types/node": "^8.0.29",
-      "ts-node": "3.3.0",
-      "typescript": "3.3.3333"
-   },
-   "dependencies": {
-      "@apollo/react-common": "^3.1.4",
-      "@apollo/react-hooks": "^4.0.0",
-      "@types/express-session": "^1.17.3",
-      "apollo-server-express": "^2.21.0",
-      "bcrypt": "^5.0.0",
-      "class-transformer": "^0.4.0",
-      "class-validator": "^0.13.1",
-      "connect": "^3.7.0",
-      "connect-sqlite3": "^0.9.11",
-      "express": "^4.17.1",
-      "express-session": "^1.17.1",
-      "graphql": "^15.5.0",
-      "graphql-toolkit": "^0.7.5",
-      "jsonwebtoken": "^8.5.1",
-      "pg": "^8.5.1",
-      "reflect-metadata": "^0.1.10",
-      "sqlite3": "^5.0.2",
-      "type-graphql": "^1.1.1",
-      "typeorm": "0.2.31"
-   },
-   "scripts": {
-      "start": "ts-node src/index.ts"
-   }
+  "name": "travel-api",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.20.1",
+    "@graphql-codegen/typescript": "^1.21.0",
+    "@graphql-codegen/typescript-operations": "^1.17.14",
+    "@graphql-codegen/typescript-react-apollo": "^2.2.1",
+    "@types/bcrypt": "^3.0.0",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/node": "^8.0.29",
+    "ts-node": "3.3.0",
+    "typescript": "3.3.3333"
+  },
+  "dependencies": {
+    "@apollo/react-common": "^3.1.4",
+    "@apollo/react-hooks": "^4.0.0",
+    "@types/express-session": "^1.17.3",
+    "apollo-server-express": "^2.21.0",
+    "bcrypt": "^5.0.0",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "connect": "^3.7.0",
+    "connect-sqlite3": "^0.9.11",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "graphql": "^15.5.0",
+    "graphql-toolkit": "^0.7.5",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.5.1",
+    "reflect-metadata": "^0.1.10",
+    "sqlite3": "^5.0.2",
+    "type-graphql": "^1.1.1",
+    "typeorm": "0.2.31"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts --script-mode"
+  }
 }
