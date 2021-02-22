@@ -2,17 +2,15 @@ import { InputType, Field } from 'type-graphql';
 
 @InputType()
 export class PlaceInput {
-    @Field({ nullable: true
-     })
+  @Field({ nullable: true })
+  id?: string;
 
-    id?: number;
+  @Field()
+  title: string;
 
-    @Field()
-    title: string
+  @Field({ nullable: true })
+  description?: string;
 
-    @Field({ nullable: true })
-    description?: string;
-
-    @Field({ nullable: true })
-    imageUrl?: string
+  @Field({ nullable: true })
+  imageUrl?: string;
 }
